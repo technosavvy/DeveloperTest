@@ -38,7 +38,7 @@ namespace Smartwyre.DeveloperTest.Services
 
             if (result.Success)
             {
-                rebateDataStore.StoreCalculationResult(rebate, rebateAmount);
+                rebateDataStore.StoreCalculationResult(rebate, result.rebateIncentive);
             }
 
             return result;
