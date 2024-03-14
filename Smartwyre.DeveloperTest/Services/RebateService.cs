@@ -30,8 +30,6 @@ namespace Smartwyre.DeveloperTest.Services
                 return result;
             }            
 
-            var rebateAmount = 0m;
-
             var incentive = IncentiveDictionary.Get(rebate.Incentive);
 
             result = incentive.Calculate(product, rebate, request.Volume);
